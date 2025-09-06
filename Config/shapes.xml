@@ -1,0 +1,23 @@
+<IronSharkInc>
+
+    <!-- industrial fence -->
+    <remove xpath="//shape[starts-with(@name, 'industrialFence')]/property[@name='ShapeAltTexture']" />
+
+    <!-- crown molding -->
+    <remove xpath="//shape[contains(@name, 'crown') or contains(@name, 'Crown')]/property[@name='ShapeAltTexture']" />
+
+    <!-- windows -->
+    <!-- 285 = Glass, 55 = Pillcase Side -->
+    <setattribute
+        xpath="//shape[contains(@name, 'window')]/property[@name='ShapeAltTexture' and contains(@value, '55') and contains(@value, ',285')]"
+        name="value">T,B,N,W,S,E,285</setattribute>
+    <!-- 702 = Broken Glass -->
+    <setattribute
+        xpath="//shape[contains(@name, 'window')]/property[@name='ShapeAltTexture' and contains(@value, '55') and contains(@value, ',702')]"
+        name="value">T,B,N,W,S,E,702</setattribute>
+    <!-- Empty -->
+    <setattribute
+        xpath="//shape[contains(@name, 'window')]/property[@name='ShapeAltTexture' and contains(@value, '55') and contains(@value, ',M')]"
+        name="value">T,B,N,W,S,E,M</setattribute>
+
+</IronSharkInc>

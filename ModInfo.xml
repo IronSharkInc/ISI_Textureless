@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<Name value="ISI-Textureless" />
+	<DisplayName value="ISI Textureless" />
+	<Version value="2.2.0.0" />
+	<Description value="Removes default textures from industrial fences (and other shapes) so you can tell if it has been upgraded or not" />
+	<Author value="IronSharkInc" />
+	<Website value="https://github.com/IronSharkInc" />
+</xml>
